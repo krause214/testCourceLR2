@@ -5,7 +5,7 @@ namespace lr2.process;
 
 public class StampingProcess(WorkerType requiredWorkerType, int requiredWorkerAmount) : Process(requiredWorkerType, requiredWorkerAmount)
 {
-    protected override Detail? GetNewDetail()
+    public override Detail? GetNewDetail()
     {
         if (PreparedAmount > 0)
         {

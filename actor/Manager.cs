@@ -18,6 +18,8 @@ public class Manager
     public CastingProcess _castingProcess;
     public ForgingProcess _forgingProcess;
     public StampingProcess _stampingProcess;
+
+    public int ReadyToSaleCars = 0; 
     
     public void HandleOrder(int amount)
     {
@@ -28,10 +30,12 @@ public class Manager
             _stampingProcess.AddMaterial(new Material(MaterialQuality.Qualitative));
         }
 
-        for (int i = 0; i < amount; i++)
-        {
-            _carFactory.ReleaseCar();
-        }
+        _carFactory.ReleaseCars();
+    }
+
+    public void SaleCars()
+    {
+        ReadyToSaleCars = _carFactory.GetCars();
     }
 
     private void InitFabric()

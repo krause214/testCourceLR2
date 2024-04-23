@@ -17,7 +17,7 @@ public abstract class Process(WorkerType requiredWorkerType, int requiredWorkerA
             PreparedAmount++;
         }
     }
-    protected abstract Detail? GetNewDetail();
+    public abstract Detail? GetNewDetail();
 
     private bool HasEnoughWorkers()
     {
