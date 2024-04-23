@@ -5,8 +5,13 @@ namespace lr2.process;
 
 public class StampingProcess(WorkerType requiredWorkerType, int requiredWorkerAmount) : Process(requiredWorkerType, requiredWorkerAmount)
 {
-    protected override Detail? PrepareNewDetail()
+    protected override Detail? GetNewDetail()
     {
-        return new Detail(DetailType.Frame);
+        if (PreparedAmount > 0)
+        {
+            PreparedAmount--;
+            return new Detail(DetailType.Frame);
+        }
+        return null;
     }
 }

@@ -5,8 +5,13 @@ namespace lr2.process;
 
 public class CastingProcess(WorkerType requiredWorkerType, int requiredWorkerAmount) : Process(requiredWorkerType, requiredWorkerAmount)
 {
-    protected override Detail? PrepareNewDetail()
+    protected override Detail? GetNewDetail()
     {
-        return new Detail(DetailType.Engine);
+        if (PreparedAmount > 0)
+        {
+            PreparedAmount--;
+            return new Detail(DetailType.Engine);
+        }
+        return null;
     }
 }

@@ -5,21 +5,19 @@ namespace lr2.process;
 
 public abstract class Process(WorkerType requiredWorkerType, int requiredWorkerAmount)
 {
-    private readonly List<Worker> _workers = [];
+    private List<Worker> _workers = [];
+    private List<Material> _materials = []; 
 
-    private int _orderAmount = 0;
+    protected int PreparedAmount = 0;
 
-    Detail? DoProcess(Material material)
+    void DoProcess()
     {
-        if (HasEnoughWorkers() && material.IsQualitative())
+        while (HasEnoughWorkers() && _materials.Count() > 0)
         {
-            return PrepareNewDetail();
-        }
-        else {
-            return null;
+            PreparedAmount++;
         }
     }
-    protected abstract Detail? PrepareNewDetail();
+    protected abstract Detail? GetNewDetail();
 
     private bool HasEnoughWorkers()
     {
@@ -33,6 +31,11 @@ public abstract class Process(WorkerType requiredWorkerType, int requiredWorkerA
             _workers.Add(worker);
         }
     }
+    
+    public void AddMaterial(Material material)
+    {
+        _materials.Add(material);
+    }
 
     public void RemoveWorker()
     {
@@ -40,11 +43,6 @@ public abstract class Process(WorkerType requiredWorkerType, int requiredWorkerA
         {
             _workers.Remove(_workers[0]);   
         }
-    }
-
-    public void OrderDetails(int amount)
-    {
-        _orderAmount += amount;
     }
     
 }
