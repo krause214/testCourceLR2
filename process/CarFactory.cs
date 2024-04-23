@@ -4,14 +4,16 @@ namespace lr2.process;
 
 public class CarFactory(CastingProcess castingProcess, ForgingProcess forgingProcess, StampingProcess stampingProcess)
 {
-    private int preparedCarAmount = 0;
+    public int preparedCarAmount = 0;
     public int enginesAmount = 0;
     public int framesAmount = 0;
     public int chassisAmount = 0;
     
     public int GetCars()
     {
-        return preparedCarAmount;
+        int prepared = preparedCarAmount;
+        preparedCarAmount = 0;
+        return prepared;
     }
 
     public void ReleaseCars()
@@ -29,9 +31,9 @@ public class CarFactory(CastingProcess castingProcess, ForgingProcess forgingPro
             framesAmount++;
         }
 
-        while (enginesAmount - 1 > 0 
-               && chassisAmount - 1 > 0
-               && framesAmount - 1 > 0) 
+        while (enginesAmount > 0 
+               && chassisAmount > 0
+               && framesAmount > 0) 
         {
             enginesAmount--;
             chassisAmount--;

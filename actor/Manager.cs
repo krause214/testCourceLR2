@@ -5,7 +5,7 @@ namespace lr2.actor;
 
 public class Manager
 {
-    Manager()
+    public Manager()
     {
         InitFabric();
     }
@@ -31,10 +31,7 @@ public class Manager
         }
 
         _carFactory.ReleaseCars();
-    }
-
-    public void SaleCars()
-    {
+        
         ReadyToSaleCars = _carFactory.GetCars();
     }
 
@@ -49,13 +46,13 @@ public class Manager
         _forgingProcess = new ForgingProcess(WorkerType.Forger, FORGING_PROCESS_WORKERS_AMOUNT);
         for (int i = 0; i < FORGING_PROCESS_WORKERS_AMOUNT; i++)
         {
-            _stampingProcess.AddWorker(new Worker(WorkerType.Forger));
+            _forgingProcess.AddWorker(new Worker(WorkerType.Forger));
         }
         
         _castingProcess = new CastingProcess(WorkerType.Caster, CASTING_PROCESS_WORKERS_AMOUNT);
         for (int i = 0; i < CASTING_PROCESS_WORKERS_AMOUNT; i++)
         {
-            _stampingProcess.AddWorker(new Worker(WorkerType.Caster));
+            _castingProcess.AddWorker(new Worker(WorkerType.Caster));
         }
 
         _carFactory = new CarFactory(_castingProcess, _forgingProcess, _stampingProcess);

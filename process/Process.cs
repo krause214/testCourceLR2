@@ -15,6 +15,7 @@ public abstract class Process(WorkerType requiredWorkerType, int requiredWorkerA
         while (HasEnoughWorkers() && Materials.Count() > 0)
         {
             PreparedAmount++;
+            Materials.Remove(Materials[0]);
         }
     }
     public abstract Detail? GetNewDetail();
@@ -35,6 +36,7 @@ public abstract class Process(WorkerType requiredWorkerType, int requiredWorkerA
     public void AddMaterial(Material material)
     {
         Materials.Add(material);
+        DoProcess();
     }
 
     public void RemoveWorker()
