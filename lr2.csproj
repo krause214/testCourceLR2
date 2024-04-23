@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="actor\" />
+    <Folder Include="entity\" />
+  </ItemGroup>
+
 </Project>
