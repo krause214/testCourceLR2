@@ -23,6 +23,6 @@ jobs:
       - name: Install dependencies
         run: dotnet restore lr2/lr2.sln
       - name: Build
-        run: dotnet build lr2/lr2.scproj
+        run: dotnet build lr2/lr2.csproj
       - name: Test with the dotnet CLI
-        run: dotnet test --logger trx lr2.Test/lr2.Test.scproj
+        run: dotnet test --logger trx lr2.Test/lr2.Test.csproj
