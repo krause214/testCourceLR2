@@ -8,5 +8,4 @@ Manager manager = new Manager();
 Buyer buyer = new Buyer(manager);
 
 buyer.OrderCars(1);
-Console.WriteLine(manager.ReadyToSaleCars);
 buyer.BuyCars();

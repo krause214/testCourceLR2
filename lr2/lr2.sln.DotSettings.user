@@ -1,9 +1,38 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=987675D2_002DEDC0_002D4688_002D9313_002DBF85DA910D94/@EntryIndexedValue">EF07C683-11A1-4409-A743-E883D511DE2C</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=MSTest/@EntryIndexedValue">d6790ab7-33c2-4425-b2c9-51480cd1a852</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1f64d6e3_002Dd48d_002D4027_002Da976_002Deb8e7aa797dd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="OrderCars_test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1f64d6e3_002Dd48d_002D4027_002Da976_002Deb8e7aa797dd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OrderCars_test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.actor.BuyerTest.OrderCars_test&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.actor.ManagerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.process.CarFactoryTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.entity.MaterialTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.process.ProcessTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.ways.TestWays.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.ways.TestWays.Test2&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.ways.TestWays.Test3&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d7710c61_002D28b6_002D485e_002D9775_002D089e502114ef/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="OrderCars_test #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.actor.BuyerTest.OrderCars_test&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.actor.ManagerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.process.CarFactoryTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.entity.MaterialTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.process.ProcessTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.ways.TestWays.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.ways.TestWays.Test2&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.ways.TestWays.Test3&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.ways.TestWays&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e5d77d74_002D15ed_002D4d8a_002D938d_002Df49f0db1580b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="DoProcess_test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.process.ProcessTest.DoProcess_test&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ebb67134_002D5431_002D447a_002Dbc84_002D0167df2e90c9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::EF07C683-11A1-4409-A743-E883D511DE2C::net8.0::lr2.Tests.ways.TestWays.Test3&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

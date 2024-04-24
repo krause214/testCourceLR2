@@ -20,7 +20,7 @@ public abstract class Process(WorkerType requiredWorkerType, int requiredWorkerA
     }
     public abstract Detail? GetNewDetail();
 
-    private bool HasEnoughWorkers()
+    public bool HasEnoughWorkers()
     {
         return Workers.Count >= requiredWorkerAmount;
     }
@@ -31,11 +31,15 @@ public abstract class Process(WorkerType requiredWorkerType, int requiredWorkerA
         {
             Workers.Add(worker);
         }
+        DoProcess();
     }
     
     public void AddMaterial(Material material)
     {
-        Materials.Add(material);
+        if (material.IsQualitative())
+        {
+            Materials.Add(material);
+        }
         DoProcess();
     }
 
